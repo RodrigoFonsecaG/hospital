@@ -38,7 +38,7 @@ window.addEventListener('click', (event) => {
 function obterTextoPista(index) {
   switch (index) {
     case 0:
-      return 'Quanto e 2+2'
+      return 'Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. Quem sou eu?'
     case 1:
       return ''
     case 2:
@@ -51,7 +51,7 @@ function obterTextoPista(index) {
 function obterRespostaPista(index) {
   switch (index) {
     case 0:
-      return 4
+      return 'tesoura'
     case 1:
       return ''
     case 2:
