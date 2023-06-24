@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="body">
+    <div class="bg" id="bg"></div>
+
+    <div id="content" class="content">
+      <div class="overlay">
+        <div class="overlay-helper">
+          <div class="overlay-element top-left">
+            <span id="overlay-top-left-text" class="overlay-text">
+              🔴 REC
+            </span>
+          </div>
+          <div class="overlay-element top-right">
+            <span id="overlay-top-right-text" class="overlay-text">
+              00:00
+            </span>
+          </div>
+          <div class="overlay-element bottom-left">
+            <span id="overlay-bottom-left-text" class="overlay-text">
+              25 FPS
+            </span>
+          </div>
+          <div class="overlay-element bottom-right">
+            <span id="overlay-bottom-right-text" class="overlay-text">
+              1280x720
+            </span>
+          </div>
+        </div>
+      </div>
+      <img
+        class="image background-image"
+        id="image"
+        src="images/image-1.jpg"
+        alt=""
+      />
+
+      <div class="action-1">
+        <img src="images/arrow-right.png" alt="" />
+      </div>
+
+      <div class="action-2">
+        <img src="images/arrow-right.png" alt="" />
+      </div>
+    </div>
+
+    <form action="" class="answer" id="final_answer_form">
+      <label class="horror-text" for="final_answer_form">Digite a resposta</label>
+      <input
+        type="text"
+        id="final_answer"
+        name="final_answer"
+        placeholder="_ _ _ _ _ _"
+      />
+    </form>
+
+    <div class="pista pista-1">
+      <img src="images/portrait-1.png" alt="" />
+    </div>
+
+    <div class="pista pista-2">
+      <img src="images/portrait-2.png" alt="" />
+    </div>
+
+    <div class="pista pista-3">
+      <img src="images/portrait-3.png" alt="" />
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <form action="" id="answer_form">
+          <img src="images/devil.png" alt="" />
+          <span id="modal-text"></span>
+          <input type="text" id="answer" name="answer" />
+          <button>Responder</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

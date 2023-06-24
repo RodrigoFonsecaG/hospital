@@ -1,0 +1,317 @@
+/* Flashlight Overlay */
+@font-face {
+  font-family: WhoAsksSatan;
+  src: url(./fonts/who-asks-satan.ttf);
+}
+
+label {
+  font-family: WhoAsksSatan;
+}
+
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 3vmax at var(--cursorX) var(--cursorY),
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  max-height: 100vh;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+
+.overlay {
+  position: relative;
+  width: 720px;
+  height: 480px;
+
+  --border-style: 2px solid red;
+  --border-space: 20px;
+  --border-style: 3px solid red;
+  --border-space: 20px;
+
+  position: absolute;
+  width: 100%; /* same size as the image */
+  height: 100%;
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+.overlay-helper {
+  position: relative;
+  width: 100%; /* make this element same size as the wrapper */
+  height: 100%;
+}
+
+.overlay-element {
+  position: absolute;
+  width: 150px; /* controls the length of the borders */
+  height: 100px; /* controls the height of the borders */
+}
+
+.overlay .top-left {
+  border-left: var(--border-style);
+  border-top: var(--border-style);
+  top: var(--border-space);
+  left: var(--border-space);
+}
+
+.overlay .top-right {
+  border-right: var(--border-style);
+  border-top: var(--border-style);
+  top: var(--border-space);
+  right: var(--border-space);
+}
+
+.overlay .bottom-left {
+  border-left: var(--border-style);
+  border-bottom: var(--border-style);
+  bottom: var(--border-space);
+  left: var(--border-space);
+}
+
+.overlay .bottom-right {
+  border-right: var(--border-style);
+  border-bottom: var(--border-style);
+  bottom: var(--border-space);
+  right: var(--border-space);
+}
+
+.overlay-text {
+  font-size: 1.75em;
+  color: white;
+  font-family: monospace;
+}
+#overlay-bottom-left-text {
+  position: absolute;
+  bottom: var(--border-space);
+  left: var(--border-space);
+}
+
+#overlay-bottom-right-text {
+  position: absolute;
+  bottom: var(--border-space);
+  right: var(--border-space);
+}
+
+#overlay-top-left-text {
+  position: absolute;
+  top: var(--border-space);
+  left: var(--border-space);
+}
+
+#overlay-top-right-text {
+  margin-left: 50%;
+  position: absolute;
+  top: var(--border-space);
+  right: var(--border-space);
+}
+
+form.answer {
+  position: absolute;
+  z-index: 99;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 72px;
+}
+
+form.answer label {
+  color: #880808;
+}
+
+input {
+  width: 100%;
+  height: 36px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid #880808;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+}
+
+form.answer input:focus {
+  outline: none;
+  border: 1px solid #880000;
+}
+
+.action-1 {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  width: 200px;
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.action-2 {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 200px;
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.action-2 img {
+  transform: scale(-1, -1);
+}
+
+.pista {
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.pista:hover {
+  border: 1px solid yellow;
+}
+
+.pista-1 {
+  top: 50%;
+  left: 70%;
+}
+
+.pista-2 {
+  top: 27%;
+  left: 20%;
+}
+
+.pista-3 {
+  top: 90%;
+  left: 79%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+  margin: 15% auto;
+  padding: 40px;
+  border: 5px solid #880808;
+  width: 80%;
+  height: 250px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 24px;
+}
+
+.modal form input {
+  width: 90%;
+}
+
+.modal img {
+  width: 40px;
+  height: 40px;
+}
+
+.modal button {
+  background-color: #880000;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
