@@ -288,7 +288,6 @@ form.answer input:focus {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -300,10 +299,14 @@ form.answer input:focus {
   padding: 40px;
   border: 5px solid #880808;
   width: 80%;
-  height: 350px;
+  height: 100%;
   max-width: 500px;
   text-align: center;
   z-index: 9999999999999999;
+}
+
+#modal-text {
+  white-space: pre-line;
 }
 
 .modal-content form {
@@ -312,7 +315,7 @@ form.answer input:focus {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .modal form input {

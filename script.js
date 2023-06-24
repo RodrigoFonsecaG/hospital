@@ -6,7 +6,7 @@ const pistas = document.querySelectorAll('.pista')
 pistas.forEach((pista, index) => {
   pista.addEventListener('click', () => {
     const textoPista = obterTextoPista(index)
-    modalText.textContent = textoPista
+    modalText.innerHTML = textoPista
 
     // Exibe o modal
     modal.style.display = 'block'
@@ -43,6 +43,14 @@ function obterTextoPista(index) {
       return ''
     case 2:
       return 'Quanto e 1+1?'
+    case 3:
+      return 'Quanto e 1+1?'
+    case 4:
+      return 'Quanto e 1+1?'
+    case 5:
+      return 'O corpo de uma mulher foi descoberto sem vida em uma das salas de cirurgia, com o rosto completamente deformado, deixando todos os funcionários do hospital em estado de choque. A arma do crime nunca foi encontrada mas um nota foi deixada ao lado do corpo <br><br><br> Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. <br><br><br> Qual foi a arma do crime?'
+    case 6:
+      return 'Quanto e 1+1?'
     default:
       return ''
   }
@@ -51,10 +59,18 @@ function obterTextoPista(index) {
 function obterRespostaPista(index) {
   switch (index) {
     case 0:
-      return 'tesoura'
+      return ''
     case 1:
       return ''
     case 2:
+      return 2
+    case 3:
+      return 2
+    case 4:
+      return 2
+    case 5:
+      return 2
+    case 6:
       return 2
     default:
       return ''
@@ -73,6 +89,18 @@ function exibirDicaPista(index) {
       dica = 'Não há dica disponível para esta pista.'
       break
     case 2:
+      dica = 'A resposta é igual a 2.'
+      break
+    case 3:
+      dica = 'A resposta é igual a 2.'
+      break
+    case 4:
+      dica = 'A resposta é igual a 2.'
+      break
+    case 5:
+      dica = 'A resposta é igual a 2.'
+      break
+    case 6:
       dica = 'A resposta é igual a 2.'
       break
     default:
