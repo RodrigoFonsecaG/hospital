@@ -159,7 +159,7 @@ function changeLife() {
   let larguraPorcentagem = (larguraPixels / life.parentNode.offsetWidth) * 100
 
   if (larguraPorcentagem < 10) {
-    alert(`Morreu`)
+    window.location.pathname = '/dead.html'
   }
 
   life.style.width = larguraPorcentagem - 10 + '%'
