@@ -3,7 +3,6 @@ const modal = document.getElementById('modal')
 const modalText = document.getElementById('modal-text')
 const pistas = document.querySelectorAll('.pista')
 
-// Adiciona o evento de clique a cada pista
 pistas.forEach((pista, index) => {
   pista.addEventListener('click', () => {
     const textoPista = obterTextoPista(index)
@@ -14,6 +13,18 @@ pistas.forEach((pista, index) => {
 
     modal.setAttribute('data-pista-index', index)
   })
+})
+
+// Adiciona o evento de clique ao botão de dica fora do loop forEach
+const tipButton = document.querySelector('.tip')
+tipButton.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  // Obtém o índice da pista atual do atributo data-pista-index do modal
+  const currentPistaIndex = parseInt(modal.getAttribute('data-pista-index'))
+
+  // Exibe a dica apenas para a pista atual
+  exibirDicaPista(currentPistaIndex)
 })
 
 // Fecha o modal quando o usuário clica fora dele
@@ -48,6 +59,27 @@ function obterRespostaPista(index) {
     default:
       return ''
   }
+}
+
+// Exibir dica
+function exibirDicaPista(index) {
+  let dica = ''
+
+  switch (index) {
+    case 0:
+      dica = 'A resposta é igual a 4.'
+      break
+    case 1:
+      dica = 'Não há dica disponível para esta pista.'
+      break
+    case 2:
+      dica = 'A resposta é igual a 2.'
+      break
+    default:
+      dica = 'Pista inválida.'
+  }
+
+  alert(dica)
 }
 
 // Checando resposta final
