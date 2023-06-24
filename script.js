@@ -154,6 +154,9 @@ const image = document.querySelector('.image')
 const pista1 = document.querySelector('.pista-1')
 const pista2 = document.querySelector('.pista-2')
 const pista3 = document.querySelector('.pista-3')
+const pista4 = document.querySelector('.pista-4')
+const pista5 = document.querySelector('.pista-5')
+const pista6 = document.querySelector('.pista-6')
 
 arrowRight.addEventListener('click', function () {
   if (image.src.includes('image-1.jpg')) {
@@ -163,6 +166,8 @@ arrowRight.addEventListener('click', function () {
     pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
+    pista4.style.display = 'block'
+    pista5.style.display = 'block'
   } else if (image.src.includes('image-3.jpg')) {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'block'
@@ -170,6 +175,7 @@ arrowRight.addEventListener('click', function () {
     pista1.style.display = 'block'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
+    pista6.style.display = 'none'
   }
 })
 
@@ -181,6 +187,8 @@ arrowLeft.addEventListener('click', function () {
     pista1.style.display = 'block'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
+    pista4.style.display = 'none'
+    pista5.style.display = 'none'
   } else if (image.src.includes('image-1.jpg')) {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'none'
@@ -188,6 +196,7 @@ arrowLeft.addEventListener('click', function () {
     pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
+    pista6.style.display = 'block'
   }
 })
 

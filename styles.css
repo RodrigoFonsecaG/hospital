@@ -263,6 +263,24 @@ form.answer input:focus {
   left: 79%;
 }
 
+.pista-4 {
+  top: 30%;
+  left: 90%;
+  display: none;
+}
+
+.pista-5 {
+  top: 48%;
+  left: 52%;
+  display: none;
+}
+
+.pista-6 {
+  top: 80%;
+  left: 80%;
+  display: none;
+}
+
 .modal {
   display: none;
   position: fixed;
