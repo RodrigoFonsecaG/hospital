@@ -82,9 +82,11 @@ function exibirDicaPista(index) {
   alert(dica)
 }
 
-// Checando resposta final
+// Checando resposta das pistas
 const answerForm = document.getElementById('answer_form')
 answerForm.addEventListener('submit', handleSubmitForm)
+
+const life = document.querySelector('.life')
 
 function handleSubmitForm(e) {
   e.preventDefault()
@@ -100,6 +102,8 @@ function handleSubmitForm(e) {
     alert('Resposta correta!')
   } else {
     alert('Resposta incorreta :(')
+
+    changeLife()
   }
 }
 
@@ -140,10 +144,25 @@ function handleSubmit(e) {
   let formValue = document.querySelector('#final_answer').value
 
   if (formValue !== 'teste') {
-    alert('Resposta incorreta :)')
+    alert('Resposta incorreta :(')
+    changeLife()
   } else {
     window.location.pathname = '/end.html'
   }
+}
+
+function changeLife() {
+  // Obtém a largura do elemento em pixels
+  let larguraPixels = life.offsetWidth
+
+  // Calcula a largura em porcentagem
+  let larguraPorcentagem = (larguraPixels / life.parentNode.offsetWidth) * 100
+
+  if (larguraPorcentagem < 10) {
+    alert(`Morreu`)
+  }
+
+  life.style.width = larguraPorcentagem - 10 + '%'
 }
 
 // SETAS
