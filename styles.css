@@ -249,8 +249,10 @@ form.answer input:focus {
 }
 
 .letter-a {
-  top: 50%;
-  right: 70%;
+  width: 150px;
+  height: 200px;
+  top: 70%;
+  right: 80%;
   position: absolute;
   opacity: 0.5;
 }
