@@ -42,9 +42,9 @@ function obterTextoPista(index) {
     case 1:
       return 'No dia 15 de fevereiro de 2002, foi encontrada um corpo no porão do hospital. Era o corpo de uma mulher, de 48 anos, que trabalhava como faxineira. A suspeita era que o crime havia ocorrido ha muito tempo mas o dia exato nunca foi descoberto. Apenas um codigo foi deixado no computador <br><br> const dia = new Date(Date.now()); <br><br>dia.setDate("12"); <br><br>dia.setMonth("1");<br><br>dia.setYear("2002");<br><br>console.log(dia) <br><br> Qual foi o dia do crime? (Formato: XX/XX/XXXX)'
     case 2:
-      return ''
+      return 'Um químico, Dr. Alexander Müller, foi encontrado morto em seu laboratório dentro do hospital. Aparentemente, seu conhecimento e descobertas na área da química medicinal chamaram a atenção de alguns pacientes perigosos.<br><br>Haviam 5 suspeitos: felice, joshua, nicolas, nathan e peter. A polícia encontrou uma nota escrita pelo químico.<br><br>A nota dizia: "26-3-58"<br><br>Quem foi o assasino?'
     case 3:
-      return 'Quanto e 1+1?'
+      return ''
     case 4:
       return 'Quanto e 1+1?'
     case 5:
@@ -65,7 +65,7 @@ function obterRespostaPista(index) {
     case 1:
       return '12/01/2002'
     case 2:
-      return 2
+      return 'felice'
     case 3:
       return 2
     case 4:
@@ -93,7 +93,7 @@ function exibirDicaPista(index) {
       dica = 'Não há dica disponível para esta pista.'
       break
     case 2:
-      dica = 'A resposta é igual a 2.'
+      dica = '6-E'
       break
     case 3:
       dica = 'A resposta é igual a 2.'
@@ -126,7 +126,7 @@ function exibirRespostaCorreta(index) {
       resposta = '7-?'
       break
     case 2:
-      resposta = 'A resposta é igual a 2.'
+      resposta = '6-E'
       break
     case 3:
       resposta = 'A resposta é igual a 2.'
@@ -251,7 +251,7 @@ arrowRight.addEventListener('click', function () {
     pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
-    pista4.style.display = 'none'
+    pista4.style.display = 'block'
     pista5.style.display = 'block'
   } else if (image.src.includes('image-3.jpg')) {
     arrowRight.style.display = 'block'
