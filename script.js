@@ -163,7 +163,7 @@ function handleSubmitForm(e) {
   const correctAnswer = obterRespostaPista(currentPistaIndex)
 
   // Compara a resposta do usuário com a resposta correta
-  if (userAnswer.trim() === correctAnswer.toString()) {
+  if (userAnswer.trim().toLowerCase() === correctAnswer.toString()) {
     exibirRespostaCorreta(currentPistaIndex)
   } else {
     alert('Resposta incorreta :(')
