@@ -38,7 +38,7 @@ window.addEventListener('click', (event) => {
 function obterTextoPista(index) {
   switch (index) {
     case 0:
-      return ''
+      return 'Um interno do Hospital foi morto com um bisturi por outro paciente que sofria de esquizofrenia, dentro da unidade psiquiátrica na terça-feira, duas mulheres foram vistas saindo da unidade, Aline e Liane. Uma mensagem foi deixada em um tablet<br><br>const silabas = ["li", "a", "ne"]<br><br>console.log("A assasina e:", silabas[1] + silabas[0] + silabas[2])<br><br>Quem matou o medico?'
     case 1:
       return 'No dia 15 de fevereiro de 2002, foi encontrada um corpo no porão do hospital. Era o corpo de uma mulher, de 48 anos, que trabalhava como faxineira. A suspeita era que o crime havia ocorrido ha muito tempo mas o dia exato nunca foi descoberto. Apenas um codigo foi deixado no computador <br><br> const dia = new Date(Date.now()); <br><br>dia.setDate("12"); <br><br>dia.setMonth("1");<br><br>dia.setYear("2002");<br><br>console.log(dia) <br><br> Qual foi o dia do crime? (Formato: XX/XX/XXXX)'
     case 2:

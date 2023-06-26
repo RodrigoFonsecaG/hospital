@@ -254,6 +254,7 @@ form.answer input:focus {
   top: 70%;
   right: 80%;
   opacity: 0.7;
+  position: absolute;
 }
 .letter-a#A{
   transform: skewY(-20deg);
