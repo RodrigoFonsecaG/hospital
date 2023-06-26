@@ -50,9 +50,7 @@ function obterTextoPista(index) {
     case 5:
       return 'O corpo de uma mulher foi descoberto sem vida em uma das salas de cirurgia, com o rosto completamente deformado, deixando todos os funcionários do hospital em estado de choque. A arma do crime nunca foi encontrada mas um nota foi deixada ao lado do corpo <br><br><br> Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. <br><br><br> Qual foi a arma do crime?'
     case 6:
-      return 'Quanto e 1+1?'
-    case 7:
-      return 'Quanto e 1+1?'
+      return 'Eu nunca fui, mas sempre serei. Ninguém nunca me viu, e nunca verão. Ainda assim, sou a esperança de todos. Quem sou eu?'
     default:
       return ''
   }
@@ -73,9 +71,7 @@ function obterRespostaPista(index) {
     case 5:
       return 'tesoura'
     case 6:
-      return 2
-    case 7:
-      return 2
+      return ('amanha' || 'amanhã')
     default:
       return ''
   }
@@ -105,7 +101,7 @@ function exibirDicaPista(index) {
       dica = 'A resposta é igual a 2.'
       break
     case 6:
-      dica = 'A resposta é igual a 2.'
+      dica = 'Depois do hoje.'
       break
     default:
       dica = 'Pista inválida.'
@@ -120,7 +116,7 @@ function exibirRespostaCorreta(index) {
 
   switch (index) {
     case 0:
-      resposta = 'A resposta é igual a 4.'
+      resposta = ''
       break
     case 1:
       resposta = '7-?'
@@ -138,7 +134,7 @@ function exibirRespostaCorreta(index) {
       resposta = '1-E'
       break
     case 6:
-      resposta = ''
+      resposta = '2-C'
       break
     default:
       resposta = 'Resposta inválida.'
