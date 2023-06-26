@@ -38,7 +38,7 @@ window.addEventListener('click', (event) => {
 function obterTextoPista(index) {
   switch (index) {
     case 0:
-      return 'Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. Quem sou eu?'
+      return ''
     case 1:
       return 'No dia 15 de fevereiro de 2002, foi encontrada um corpo no porão do hospital. Era o corpo de uma mulher, de 48 anos, que trabalhava como faxineira. A suspeita era que o crime havia ocorrido ha muito tempo mas o dia exato nunca foi descoberto. Apenas um codigo foi deixado no computador <br><br> const dia = new Date(Date.now()); <br><br>dia.setDate("12"); <br><br>dia.setMonth("1");<br><br>dia.setYear("2002");<br><br>console.log(dia) <br><br> Qual foi o dia do crime? (Formato: XX/XX/XXXX)'
     case 2:
@@ -71,7 +71,7 @@ function obterRespostaPista(index) {
     case 5:
       return 'tesoura'
     case 6:
-      return ('amanha' || 'amanhã')
+      return 'amanha' || 'amanhã'
     default:
       return ''
   }
@@ -231,7 +231,8 @@ const arrowRight = document.querySelector('.action-1')
 const arrowLeft = document.querySelector('.action-2')
 const image = document.querySelector('.image')
 
-const pista1 = document.querySelector('.letter-a')
+const letra = document.querySelector('.letter-a')
+const pista1 = document.querySelector('.pista-1')
 const pista2 = document.querySelector('.pista-2')
 const pista3 = document.querySelector('.pista-3')
 const pista4 = document.querySelector('.pista-4')
@@ -244,6 +245,7 @@ arrowRight.addEventListener('click', function () {
     arrowRight.style.display = 'none'
     arrowLeft.style.display = 'block'
     image.src = 'images/image-2.jpg'
+    letra.style.display = 'none'
     pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
@@ -253,7 +255,8 @@ arrowRight.addEventListener('click', function () {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'block'
     image.src = 'images/image-1.jpg'
-    pista1.style.display = 'none'
+    letra.style.display = 'block'
+    pista1.style.display = 'block'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
     pista6.style.display = 'none'
@@ -266,7 +269,8 @@ arrowLeft.addEventListener('click', function () {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'block'
     image.src = 'images/image-1.jpg'
-    pista1.style.display = 'none'
+    letra.style.display = 'block'
+    pista1.style.display = 'block'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
     pista4.style.display = 'none'
@@ -275,7 +279,8 @@ arrowLeft.addEventListener('click', function () {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'none'
     image.src = 'images/image-3.jpg'
-    pista1.style.display = 'block'
+    letra.style.display = 'none'
+    pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
     pista6.style.display = 'block'

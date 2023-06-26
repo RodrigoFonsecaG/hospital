@@ -253,17 +253,23 @@ form.answer input:focus {
   height: 200px;
   top: 70%;
   right: 80%;
-  position: absolute;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .letter-a#A{
   transform: skewY(-20deg);
+}
+
+.pista-1 {
+  top: 47%;
+  left: 70%;
 }
 
 .pista-2 {
   top: 27%;
   left: 20%;
 }
+
+
 
 .pista-3 {
   top: 90%;
