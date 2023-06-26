@@ -40,9 +40,9 @@ function obterTextoPista(index) {
     case 0:
       return 'Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. Quem sou eu?'
     case 1:
-      return ''
+      return 'No dia 15 de fevereiro de 2002, foi encontrada um corpo no porão do hospital. Era o corpo de uma mulher, de 48 anos, que trabalhava como faxineira. A suspeita era que o crime havia ocorrido ha muito tempo mas o dia exato nunca foi descoberto. Apenas um codigo foi deixado no computador <br><br> const dia = new Date(Date.now()); <br><br>dia.setDate("12"); <br><br>dia.setMonth("1");<br><br>dia.setYear("2002");<br><br>console.log(dia) <br><br> Qual foi o dia do crime? (Formato: XX/XX/XXXX)'
     case 2:
-      return 'Quanto e 1+1?'
+      return ''
     case 3:
       return 'Quanto e 1+1?'
     case 4:
@@ -63,7 +63,7 @@ function obterRespostaPista(index) {
     case 0:
       return ''
     case 1:
-      return ''
+      return '12/01/2002'
     case 2:
       return 2
     case 3:
@@ -123,7 +123,7 @@ function exibirRespostaCorreta(index) {
       resposta = 'A resposta é igual a 4.'
       break
     case 1:
-      resposta = 'Não há dica disponível para esta pista.'
+      resposta = '7-?'
       break
     case 2:
       resposta = 'A resposta é igual a 2.'
