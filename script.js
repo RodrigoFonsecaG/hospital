@@ -51,6 +51,8 @@ function obterTextoPista(index) {
       return 'O corpo de uma mulher foi descoberto sem vida em uma das salas de cirurgia, com o rosto completamente deformado, deixando todos os funcionários do hospital em estado de choque. A arma do crime nunca foi encontrada mas um nota foi deixada ao lado do corpo <br><br><br> Ponha os dedos nos meus olhos que eu abrirei as minhas potentes mandíbulas. E vou devorar tudo o que vier pela frente: roupas, penas, papéis. <br><br><br> Qual foi a arma do crime?'
     case 6:
       return 'Quanto e 1+1?'
+    case 7:
+      return 'Quanto e 1+1?'
     default:
       return ''
   }
@@ -69,8 +71,10 @@ function obterRespostaPista(index) {
     case 4:
       return 2
     case 5:
-      return 2
+      return 'tesoura'
     case 6:
+      return 2
+    case 7:
       return 2
     default:
       return ''
@@ -110,6 +114,39 @@ function exibirDicaPista(index) {
   alert(dica)
 }
 
+// Exibir dica
+function exibirRespostaCorreta(index) {
+  let resposta = ''
+
+  switch (index) {
+    case 0:
+      resposta = 'A resposta é igual a 4.'
+      break
+    case 1:
+      resposta = 'Não há dica disponível para esta pista.'
+      break
+    case 2:
+      resposta = 'A resposta é igual a 2.'
+      break
+    case 3:
+      resposta = 'A resposta é igual a 2.'
+      break
+    case 4:
+      resposta = 'A resposta é igual a 2.'
+      break
+    case 5:
+      resposta = '1-E'
+      break
+    case 6:
+      resposta = ''
+      break
+    default:
+      resposta = 'Resposta inválida.'
+  }
+
+  alert('Resposta correta: ' + resposta)
+}
+
 // Checando resposta das pistas
 const answerForm = document.getElementById('answer_form')
 answerForm.addEventListener('submit', handleSubmitForm)
@@ -127,7 +164,7 @@ function handleSubmitForm(e) {
 
   // Compara a resposta do usuário com a resposta correta
   if (userAnswer.trim() === correctAnswer.toString()) {
-    alert('Resposta correta!')
+    exibirRespostaCorreta(currentPistaIndex)
   } else {
     alert('Resposta incorreta :(')
 
@@ -247,7 +284,6 @@ arrowLeft.addEventListener('click', function () {
     pista3.style.display = 'none'
     pista6.style.display = 'block'
     pista7.style.display = 'block'
-
   }
 })
 
