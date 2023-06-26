@@ -44,7 +44,7 @@ function obterTextoPista(index) {
     case 2:
       return 'Um químico, Dr. Alexander Müller, foi encontrado morto em seu laboratório dentro do hospital. Aparentemente, seu conhecimento e descobertas na área da química medicinal chamaram a atenção de alguns pacientes perigosos.<br><br>Haviam 5 suspeitos: felice, joshua, nicolas, nathan e peter. A polícia encontrou uma nota escrita pelo químico.<br><br>A nota dizia: "26-3-58"<br><br>Quem foi o assasino?'
     case 3:
-      return ''
+      return 'const numero1 = "30"<br><br>const numero2 = "77"<br><br>console.log("Resultado: ", numero1 + numero2)'
     case 4:
       return 'Ao desembarcar em uma ilha deserta, ao explorar a paisagem desolada, deparo-me com um antigo acampamento. Uma fogueira apagada repousa no centro, rodeada por destroços e sinais de atividade humana. Curioso, aproximo-me cautelosamente e me deparo com um bilhete empoeirado, cujas palavras mal se sustentam, mas ainda são legíveis: "Cansado e fadigado, descanse um instante e erga a lanterna." Meu coração acelera de antecipação ao lembrar da lanterna que sempre carrego comigo. Sigo as instruções enigmáticas e ergo-a para o alto. Para minha surpresa, as letras gravadas na rocha próxima ganham vida, revelando uma mensagem misteriosa. <br>"3M0D"<br> Depois de ler a mensagem, você tenta entender a palavra. Qual a palavra que está grafada na pedra?'
     case 5:
@@ -65,7 +65,7 @@ function obterRespostaPista(index) {
     case 2:
       return 'felice'
     case 3:
-      return 2
+      return '3077'
     case 4:
       return 'medo'
     case 5:
@@ -83,22 +83,23 @@ function exibirDicaPista(index) {
 
   switch (index) {
     case 0:
-      dica = 'A resposta é igual a 4.'
+      dica =
+        'silabas[1]: "posicao 1 de silabas"  silabas[0]: "posicao 0 de silabas"  silabas[2]: "posicao 2 de silabas"'
       break
     case 1:
-      dica = 'Não há dica disponível para esta pista.'
+      dica = 'setDate represena o dia.'
       break
     case 2:
-      dica = '6-E'
+      dica = 'Não há dica disponível para esta pista.'
       break
     case 3:
-      dica = 'A resposta é igual a 2.'
+      dica = 'Observe o tipo da variavel.'
       break
     case 4:
       dica = 'Não há dica disponível para esta pista.'
       break
     case 5:
-      dica = 'A resposta é igual a 2.'
+      dica = 'Talvez voce tenha uma perto de voce?.'
       break
     case 6:
       dica = 'Depois do hoje.'
@@ -116,7 +117,7 @@ function exibirRespostaCorreta(index) {
 
   switch (index) {
     case 0:
-      resposta = ''
+      resposta = '1-E'
       break
     case 1:
       resposta = '7-?'
@@ -125,13 +126,13 @@ function exibirRespostaCorreta(index) {
       resposta = '6-E'
       break
     case 3:
-      resposta = 'A resposta é igual a 2.'
+      resposta = '5-P'
       break
     case 4:
       resposta = '2-S'
       break
     case 5:
-      resposta = '1-E'
+      resposta = '8-?'
       break
     case 6:
       resposta = '3-C'
@@ -204,7 +205,7 @@ function handleSubmit(e) {
   e.preventDefault()
   let formValue = document.querySelector('#final_answer').value
 
-  if (formValue !== 'teste') {
+  if (formValue !== 'escape??') {
     alert('Resposta incorreta :(')
     changeLife()
   } else {
