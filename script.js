@@ -235,7 +235,7 @@ const arrowRight = document.querySelector('.action-1')
 const arrowLeft = document.querySelector('.action-2')
 const image = document.querySelector('.image')
 
-const pista1 = document.querySelector('.pista-1')
+const pista1 = document.querySelector('.letter-a')
 const pista2 = document.querySelector('.pista-2')
 const pista3 = document.querySelector('.pista-3')
 const pista4 = document.querySelector('.pista-4')
@@ -251,13 +251,13 @@ arrowRight.addEventListener('click', function () {
     pista1.style.display = 'none'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
-    pista4.style.display = 'block'
+    pista4.style.display = 'none'
     pista5.style.display = 'block'
   } else if (image.src.includes('image-3.jpg')) {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'block'
     image.src = 'images/image-1.jpg'
-    pista1.style.display = 'block'
+    pista1.style.display = 'none'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
     pista6.style.display = 'none'
@@ -270,7 +270,7 @@ arrowLeft.addEventListener('click', function () {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'block'
     image.src = 'images/image-1.jpg'
-    pista1.style.display = 'block'
+    pista1.style.display = 'none'
     pista2.style.display = 'block'
     pista3.style.display = 'block'
     pista4.style.display = 'none'
@@ -279,7 +279,7 @@ arrowLeft.addEventListener('click', function () {
     arrowRight.style.display = 'block'
     arrowLeft.style.display = 'none'
     image.src = 'images/image-3.jpg'
-    pista1.style.display = 'none'
+    pista1.style.display = 'block'
     pista2.style.display = 'none'
     pista3.style.display = 'none'
     pista6.style.display = 'block'

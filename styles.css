@@ -248,9 +248,14 @@ form.answer input:focus {
   border: 1px solid yellow;
 }
 
-.pista-1 {
+.letter-a {
   top: 50%;
-  left: 70%;
+  right: 70%;
+  position: absolute;
+  opacity: 0.5;
+}
+.letter-a#A{
+  transform: skewY(-20deg);
 }
 
 .pista-2 {
