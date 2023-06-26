@@ -59,7 +59,7 @@ function obterTextoPista(index) {
 function obterRespostaPista(index) {
   switch (index) {
     case 0:
-      return ''
+      return 'aline'
     case 1:
       return '12/01/2002'
     case 2:
