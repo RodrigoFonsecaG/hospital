@@ -204,6 +204,7 @@ const pista3 = document.querySelector('.pista-3')
 const pista4 = document.querySelector('.pista-4')
 const pista5 = document.querySelector('.pista-5')
 const pista6 = document.querySelector('.pista-6')
+const pista7 = document.querySelector('.pista-7')
 
 arrowRight.addEventListener('click', function () {
   if (image.src.includes('image-1.jpg')) {
@@ -223,6 +224,7 @@ arrowRight.addEventListener('click', function () {
     pista2.style.display = 'block'
     pista3.style.display = 'block'
     pista6.style.display = 'none'
+    pista7.style.display = 'none'
   }
 })
 
@@ -244,6 +246,8 @@ arrowLeft.addEventListener('click', function () {
     pista2.style.display = 'none'
     pista3.style.display = 'none'
     pista6.style.display = 'block'
+    pista7.style.display = 'block'
+
   }
 })
 
